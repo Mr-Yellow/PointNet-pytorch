@@ -9,9 +9,6 @@ import torch.nn.functional as F
 
 
 class STN3d(nn.Module):
-    '''
-    点云特征为3d
-    '''
     def __init__(self):
         super(STN3d, self).__init__()
         self.conv1 = torch.nn.Conv1d(3, 64, 1)
